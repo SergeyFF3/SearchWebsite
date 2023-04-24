@@ -1,0 +1,65 @@
+.form {
+  max-width: 510px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+
+  @media (max-width: 659px) {
+    max-width: 410px;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 362px;
+  }
+}
+
+.wrapperInput {
+  position: relative;
+  max-width: 420px;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 8px 12px 36px;
+  background: #EEEEEE;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 19px;
+
+  &::placeholder {
+    color: #9C9C9C;
+  }
+}
+
+.btn {
+  padding: 14px 16px;
+  width: 82px;
+  height: 48px;
+  background: #EB0C0C;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  transition: .2s;
+
+  &:hover {
+    background: #C30000;
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+}
+
+.clearIcon {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  cursor: pointer;
+}
